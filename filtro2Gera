@@ -1,0 +1,6 @@
+    while cap.isOpened():
+        # BGR image feed from camera
+        success, img = cap.read()
+        invert = apply_invert(img)
+        if not success:
+            break
