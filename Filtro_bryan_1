@@ -1,0 +1,12 @@
+import cv2
+import time
+import argparse
+
+if __name__ == '__main__':
+    script_start_time = time.time()
+    parser = argparse.ArgumentParser(description='Camera visualization')
+    ### Positional arguments
+    parser.add_argument('-i', '--cameraSource', default=0,
+                        help="Introduce number or camera path, default is 0 (default cam)")
+    args = vars(parser.parse_args())
+    cap = cv2.VideoCapture(args["cameraSource"])  # 0 local o primary camera
