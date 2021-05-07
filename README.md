@@ -12,3 +12,7 @@
 
 ### También intentamos utilizar el código de cámara inicial para poder hacer un filtro que incertara una imágen en cierto lugar indicado, por ejemplo un cubrebocas o unos lentes que cubrieran esa parte del cuerpo cuando detecta la cara. En esta código el problema que tuvimos fue el ajustar el tamaño de la imagen png a la hora de alejarse o acercarse a la cámara. Por otro lado en el código de los lentes nos salía un error a la hora de correrlo y nunca supimos porque ni como solucionarlo, por eso quedan incompletos. Sin embargo, aquí se encuentran los archivos también.
 
+## Lentes.py es el código fallido
+
+## Referencias para Lentes.py
+## Udell, A. (2021, March 10). Creating a Snapchat-Style Filter with Python - Towards Data Science. Medium. https://towardsdatascience.com/creating-a-snapchat-style-filter-with-python-b42ecfd2ff54
