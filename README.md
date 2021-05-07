@@ -3,7 +3,7 @@
 
 - Bryan
 - Gerardo
-- Karla | A01541526
+- Karla González Sánchez | A01541526
 - John Paul Cueva Osete | A01639913
 
 ## Breve explicación
