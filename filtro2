@@ -4,3 +4,9 @@
         invert = apply_invert(img)
         if not success:
             break
+        if img is None:
+            break
+        cv2.imshow("Output", invert)
+        k = cv2.waitKey(10)
+        if k == 27:
+            break
