@@ -1,0 +1,2 @@
+    def apply_invert(img):
+        return cv2.bitwise_not(img)
