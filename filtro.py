@@ -2,7 +2,6 @@ import cv2
 import time
 import argparse
 
-
 if __name__ == '__main__':
     script_start_time = time.time()
     parser = argparse.ArgumentParser(description='Camera visualization')
