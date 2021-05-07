@@ -10,59 +10,59 @@
 
 ## Código 
 
-import cv2
+    import cv2
 
-import time
+    import time
 
-import argparse
+    import argparse
 
 
-if __name__ == '__main__':
+    if __name__ == '__main__':
 
-    script_start_time = time.time()
+        script_start_time = time.time()
     
-    parser = argparse.ArgumentParser(description='Camera visualization')
+        parser = argparse.ArgumentParser(description='Camera visualization')
    
-    ### Positional arguments
+        ### Positional arguments
     
-    parser.add_argument('-i', '--cameraSource', default=1, help="Introduce number or camera path, default is 0 (default cam)")
+        parser.add_argument('-i', '--cameraSource', default=1, help="Introduce number or camera path, default is 0 (default cam)")
     
-    args = vars(parser.parse_args())
+        args = vars(parser.parse_args())
     
-    cap = cv2.VideoCapture(args["cameraSource"])  # 0 local o primary camera
+        cap = cv2.VideoCapture(args["cameraSource"])  # 0 local o primary camera
     
-    ### Invert colors
+        ### Invert colors
     
-    def apply_invert(img):
+        def apply_invert(img):
     
-        return cv2.bitwise_not(img)
+            return cv2.bitwise_not(img)
     
-    while cap.isOpened():
+        while cap.isOpened():
     
-        # BGR image feed from camera
+            # BGR image feed from camera
         
-        success, img = cap.read()
+            success, img = cap.read()
         
-        invert = apply_invert(img)
+            invert = apply_invert(img)
         
-        if not success:
+            if not success:
         
-            break
+                break
         
-        if img is None:
+            if img is None:
         
-            break
+                break
         
-        cv2.imshow("Output", invert)
+            cv2.imshow("Output", invert)
         
-        k = cv2.waitKey(10)
+            k = cv2.waitKey(10)
         
-        if k == 27:
+            if k == 27:
         
-            break
+                break
     
-    cap.release()
+        cap.release()
     
-    cv2.destroyAllWindows()
+        cv2.destroyAllWindows()
     
-    print('Script took %f seconds.' % (time.time() - script_start_time))
+        print('Script took %f seconds.' % (time.time() - script_start_time))
