@@ -1,10 +1,10 @@
 # Filtro de Camara
 ### Filtro que invierte los colores a la webcam
 
-Bryan
-Gerardo
-Karla
-John Paul
+- Bryan
+- Gerardo
+- Karla 
+- John Paul Cueva Osete | A01639913
 
 # Breve explicación
 Lo que hicimos en este proyecto fue crear un código de Python que nos pudiera mostrar un filtro en vivo de cámara. En este caso utilizamos el filtro de colores invertidos. Para hacerlo utilizamos como base el código que llama a la cámara 0 o dafault del dispositivo en donde se corre el código, y luego agregamos otras líneas de código que nos mostrara la imágen de la cámara pero con los colores invertidos. 
