@@ -9,6 +9,7 @@ eye_cache = None
 cap = cv2.VideoCapture(0)
 while True:
     
+    
     # Read the frame
     ret, frame = cap.read()
     # Check to make sure camera loaded the image correctly
