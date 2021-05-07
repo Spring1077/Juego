@@ -1,7 +1,7 @@
 # Filtro de Camara
 ## Integrantes
 - Bryan
-- Gerardo
+- Gerardo Diaz Lopez | A01630967
 - Karla González Sánchez | A01541526
 - John Paul Cueva Osete | A01639913
 
