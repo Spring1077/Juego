@@ -1,3 +1,0 @@
-    cap.release()
-    cv2.destroyAllWindows()
-    print('Script took %f seconds.' % (time.time() - script_start_time))
